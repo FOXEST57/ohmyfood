@@ -1,0 +1,16 @@
+.header {
+    width: 100%;
+    height: 70px;
+    padding: 15px 0 5px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+        &__fleche { 
+            position: absolute;
+            left: 20px;
+            width: 20%;}
+    }
+    
+

@@ -9,7 +9,8 @@
         <link rel="stylesheet" href="public/CSS/styles.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css" integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM" crossorigin="anonymous">
         <script src="https://kit.fontawesome.com/174ec50c33.js" crossorigin="anonymous"></script>
         <title>ohmyfood</title>
@@ -17,25 +18,24 @@
   </head>
 
   <body>
-        <header class="header">
-            <a class="header__fleche" href="index.html"><i class="fa-solid fa-arrow-left"></i></a>
-            <h1 class="header__logo">ohmyfood</h1>
-        </header>
+    <header class="header">
+        <h1 class="header__logo">ohmyfood</h1>  
+    </header>
 
         <div class="bloc">
           <div class="bloc__loader"></div>
         </div>
 
         
-          <div>
-            <div><i class="fa-solid fa-location-dot"></i></div>
-            <div><p>Paris, Belleville</p></div>
+          <div class="lieu">
+            <div class="lieu__icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="lieu__texte" ><p>Paris, Belleville</p></div>
           </div>
-
-          <div>
-            <h2>Réservé le menu qui vous convient</h2>
-            <p>Découvrer des restaurants d'exception, sélectionnés par nos soins.</p>
-            <div>
+       
+          <div class="decouverte">
+            <h2 class="decouverte__titre">Réservez le menu qui vous convient</h2>
+            <p class="decouverte__soustitre">Découvrer des restaurants d'exception, sélectionnés par nos soins.</p>
+            <div class="decouverte__bouton">
               <a href="#restaurants">Explorer nos restaurants</a> 
             </div>
           </div>
@@ -44,27 +44,47 @@
 
          
 
-          <section class="section1">
+          <section class="section">
 
-            <h2>Fonctionnement</h2>
+            <h2 class="section__titre">Fonctionnement</h2>
 
-            <div class="sectio">
-              <div class="section1__fonctionnement"> 1 </div>
-              <div><i class="fa-solid fa-mobile-screen-button"></i>
-              <a href="#">Choisissez votre restaurant</a></div>
+            <div class="fonctionnement">
+              <div class="fonctionnement__conteneur">
+                <div class="fonctionnement__nombre">
+                  <span class="nombre--un"> 1 </span>
+                </div>
+                <div>
+                  <i class="fa-solid fa-mobile-screen-button"></i>
+                </div>
+                <p class="fonctionnement__texte">Choisissez votre restaurant</p>
+              </div>
             </div>
 
-            <div>
-              <div class="section1__fonctionnement"> 2 </div>
-              <div><i class="fa-solid fa-list-ul"></i></div>
-              <div><a href="#">Composez votre menu</a></div>
+            <div class="fonctionnement">
+              <div class="fonctionnement__conteneur">
+                <div class="fonctionnement__nombre">
+                  <span class="nombre--deux"> 2 </span>
+                </div>
+                <div>
+                  <i class="fa-solid fa-mobile-screen-button"></i>
+                </div>
+                <p class="fonctionnement__texte">Composez votre menu</p>
+              </div>
             </div>
 
-            <div>
-              <div class="section1__fonctionnement"> 3 </div>
-              <div><i class="fa-solid fa-store"></i></div>
-              <div><a href="#">Dégustez au restaurant</a></div>
+            <div class="fonctionnement">
+              <div class="fonctionnement__conteneur">
+                <div class="fonctionnement__nombre">
+                  <span class="nombre--trois"> 3 </span>
+                </div>
+                <div>
+                  <i class="fa-solid fa-mobile-screen-button"></i>
+                </div>
+                <p class="fonctionnement__texte">CDégustez au restaurant</p>
+              </div>
             </div>
+
+            
 
           </section>
         
@@ -73,7 +93,7 @@
           <h2>Restaurants</h2>
           <section>
             <div>
-              <div><img src="/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="restaurant la palette du goût"></div>
+              <div><img class="image-top__image" src="/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="restaurant la palette du goût"></div>
               <div>
                 <div>
                   <h3>La palette du goût</h3>
@@ -106,21 +126,25 @@
 
         </main>
 
-        <Footer>
-          <h2>ohmyfood</h2>
-          <div>
-            <div><i class="fa-solid fa-utensils"></i></div>
-            <a href="#">Proposer un restaurant</a>
+        <Footer class="footer">
+         <a class="footer__titre" href="#">ohmyfood</a>
+          <div class="footer__conteneur">
+            <div class="footer__conteneur__soustitre"><i class="fa-solid fa-utensils"></i></div>
+            <a class="footer__conteneur__lien" href="#">Proposer un restaurant</a>
           </div>
 
-          <div>
-            <div> <i class="fa-solid fa-handshake-angle"></i></div>
-            <a href="#">Devenir Partenaire</a>
+          <div class="footer__conteneur">
+            <div class="footer__conteneur__soustitre"> <i class="fa-solid fa-handshake-angle"></i></div>
+            <a class="footer__conteneur__lien" href="#">Devenir Partenaire</a>
           </div>
           
-          <p>Mention légales</p>
-
-          <P>Contact</P>
+          <div>
+          <a class="footer__conteneur__lien" ref="#">Mention légale</a> 
+          </div>
+          
+          <div>
+            <a class="footer__conteneur__lien" ref="#">Contact</a> 
+          </div>
 
         </Footer>
   

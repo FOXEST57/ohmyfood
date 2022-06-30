@@ -2,10 +2,11 @@
 @import "./utils/functions";
 @import "./utils/mixins";
 @import "./utils/extensions";
-
 @import "./base/base";
 @import "./base/typography";
+@import "./conponents/buttons";
+@import "./layout/_header";
+@import "./pages/_pages"
 
-@import "./conponents/buttons"
 
 
