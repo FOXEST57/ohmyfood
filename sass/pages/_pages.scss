@@ -8,7 +8,7 @@
     box-shadow: inset 0 5px 5px 0  #dddddd;
 
         &__icon {padding: 0 1.5% 0 0%;}
-        &__texte{padding: 0 0% 0 1.5%;}
+        &__texte {padding: 0 0% 0 1.5%;}
 }
 
 .decouverte {
@@ -25,3 +25,18 @@
     &__soustitre {width: 80%;
                     text-align: center;}
     }
+
+
+
+.fonctionnement__conteneur { 
+    @include bouton-foctionnement;
+    margin-top: 20px; 
+    
+                        }  
+.fonctionnement__icon {
+             margin-left: 30px;}                        
+                        
+.fonctionnement__texte {
+                            margin-left: 30px;
+                        
+                        }
