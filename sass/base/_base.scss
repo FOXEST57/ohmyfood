@@ -4,6 +4,7 @@ html {
 
 body {
         margin: 0;
+        font-family: "roboto", sans-serif;
 }
 
 a {     text-decoration: none;
@@ -19,16 +20,13 @@ a {     text-decoration: none;
         display: flex;
         -webkit-box-pack: center;
         justify-content: center;
-        background-color: $couleur-tertiaire;
-       
-
+        
         &__image {
-                width: 100%;
-                object-fit: cover;
-                height: 30vh;
-
+                @include image;
         }
 }
+
+
 
 
      
