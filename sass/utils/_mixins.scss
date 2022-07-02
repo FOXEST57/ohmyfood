@@ -22,3 +22,32 @@
     box-shadow: 1px 2px 8px 2px #c4c4c4;
     background-color: #f5f5f5;
 }
+
+@mixin image { 
+    width: 100%;
+    object-fit: cover;
+    height: 30vh;
+}
+
+@mixin image-restaurant {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    
+    
+}
+
+@mixin titre-h2-index {
+    
+    margin-left: 0px;
+    font-weight: 800;
+}
+
+@mixin restaurant-nouveau {
+    color: #038e6b;
+    background: $couleur-tertiaire;
+    border: 5px solid $couleur-tertiaire;
+    border-radius: 5px;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+}

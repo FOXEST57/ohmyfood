@@ -4,6 +4,7 @@ html {
 
 body {
   margin: 0;
+  font-family: "roboto", sans-serif;
 }
 
 a {
@@ -19,7 +20,6 @@ a {
   display: flex;
   -webkit-box-pack: center;
   justify-content: center;
-  background-color: #99e2d0;
 }
 .image-top__image {
   width: 100%;
@@ -39,6 +39,7 @@ h1 {
 }
 
 h2 {
+  font-family: roboto;
   font-size: 24px;
   font-weight: 800;
 }
@@ -69,8 +70,8 @@ h2 {
   cursor: pointer;
 }
 .decouverte__bouton button:hover {
-  background-color: #ae80e5;
-  background-blend-mode: lighten;
+  background-color: rgba(150, 94, 219, 0.3529411765);
+  background-blend-mode: darken;
   box-shadow: 4px 4px 6px #000;
 }
 
@@ -86,6 +87,44 @@ h2 {
   position: absolute;
   left: 20px;
   width: 20%;
+}
+
+.footer {
+  background-color: #353535;
+  color: #ffffff;
+  padding: 30px 0 30px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+.footer__titre {
+  font-family: "shrikhand";
+  font-size: 20px;
+  margin-left: 20px;
+  padding-bottom: 30px;
+}
+.footer__conteneur {
+  display: flex;
+  margin-left: 20px;
+}
+.footer__conteneur__soustitre {
+  margin-right: 10px;
+  width: 17px;
+}
+.footer__titre {
+  color: #ffffff;
+}
+.footer__conteneur__lien {
+  color: #ffffff;
+  padding-bottom: 15px;
+}
+.footer__conteneur__liens {
+  color: #ffffff;
+  margin-left: 20px;
+}
+.footer__cl {
+  padding-bottom: 15px;
 }
 
 .lieu {
@@ -120,6 +159,10 @@ h2 {
   text-align: center;
 }
 
+.section__titre {
+  margin-left: 20px;
+}
+
 .fonctionnement__conteneur {
   display: flex;
   flex-direction: row;
@@ -133,14 +176,57 @@ h2 {
   background-color: #f5f5f5;
   margin-top: 20px;
 }
-
 .fonctionnement__icon {
   margin-left: 30px;
 }
-
 .fonctionnement__texte {
   margin-left: 30px;
   font-weight: 500;
+}
+
+.restaurant {
+  width: 100%;
+  margin-top: 20%;
+  background-color: #f6f6f6;
+  padding: 2rem 1rem;
+}
+.restaurant .restaurant-titre {
+  margin-left: 0px;
+  font-weight: 800;
+}
+.restaurant .restaurant__image {
+  width: 100%;
+  object-fit: cover;
+  height: 30vh;
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+
+.restaurant-section {
+  position: relative;
+  box-shadow: 4px 4px 6px #aaa;
+  border-radius: 20px;
+}
+
+.box-restaurant {
+  color: #038e6b;
+  background: #99e2d0;
+  border: 5px solid #99e2d0;
+  border-radius: 5px;
+  position: absolute;
+  right: 5%;
+  top: 5%;
+}
+
+.box-restaurant__titre {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 5px 0px 5px;
+}
+
+.box-restaurant__soustitre {
+  margin-left: 5px;
 }
 
 /*# sourceMappingURL=styles.css.map */

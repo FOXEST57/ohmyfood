@@ -19,8 +19,9 @@
     @include bouton-index;
     
     &:hover {
-      background-color: lighten(#9356dc, 10%);
-      background-blend-mode: lighten;
+      background-color: darken(#a473e05a, 5%);
+      background-blend-mode: darken;
       box-shadow: 4px 4px 6px #000;
+      
     }
   }                
