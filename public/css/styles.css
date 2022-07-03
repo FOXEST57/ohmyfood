@@ -1,3 +1,49 @@
+.bloc {
+  background-color: #99e2d0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  animation: off;
+  animation-duration: 3s;
+  transition: opacity 3s ease-in-out;
+  animation-delay: 1.9s;
+  animation-fill-mode: both;
+}
+.bloc__loader {
+  width: 200px;
+  height: 200px;
+  align-items: center;
+  justify-content: center;
+  border: solid 17px #ff79da;
+  margin-top: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  z-index: 1;
+  border-top-color: #9356dc;
+  animation: rotate linear infinite;
+  animation-duration: 3s;
+}
+
+@keyframes off {
+  from {
+    opacity: 80%;
+  }
+  to {
+    display: none;
+    opacity: 0%;
+    z-index: -1;
+  }
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 html {
   margin: 0;
 }
