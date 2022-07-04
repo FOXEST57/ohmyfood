@@ -4,7 +4,7 @@
   height: 100%;
   position: fixed;
   z-index: 1;
-  animation: off;
+  animation: fond;
   animation-duration: 3s;
   transition: opacity 3s ease-in-out;
   animation-delay: 1.9s;
@@ -26,7 +26,7 @@
   animation-duration: 3s;
 }
 
-@keyframes off {
+@keyframes fond {
   from {
     opacity: 80%;
   }
@@ -44,6 +44,27 @@
     transform: rotate(360deg);
   }
 }
+.box-restaurant__coeur {
+  position: absolute;
+  right: 20px;
+  bottom: 30px;
+  font-size: 25px;
+}
+.box-restaurant__coeur .coeur {
+  color: transparent;
+}
+.box-restaurant__coeur:hover .coeur-anim {
+  position: absolute;
+  left: 50%;
+  transform: translate(50%);
+  bottom: 3px;
+  font-size: 25px;
+  color: #9356DC;
+  font-weight: bold;
+  transition-duration: 0.3s;
+  font-size: 25px;
+}
+
 html {
   margin: 0;
 }
@@ -157,8 +178,8 @@ p {
   cursor: pointer;
 }
 .decouverte__bouton button:hover {
-  background-color: rgba(150, 94, 219, 0.3529411765);
-  background-blend-mode: darken;
+  background-color: rgba(205, 178, 238, 0.4196078431);
+  background-blend-mode: lighten;
   box-shadow: 4px 4px 6px #000;
 }
 

@@ -30,8 +30,8 @@
     @include bouton-index;
     
     &:hover {
-      background-color: darken(#a473e05a, 5%);
-      background-blend-mode: darken;
+      background-color: lighten(#a473e06b, 15%);
+      background-blend-mode: lighten;
       box-shadow: 4px 4px 6px #000;
       
     }

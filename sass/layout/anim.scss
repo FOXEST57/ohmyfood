@@ -17,6 +17,37 @@
       transform: rotate(360deg);
     }
   }
+
+
+  .box-restaurant__coeur {
+    position: absolute;
+    right: 20px;
+    bottom: 30px;
+    font-size: 25px;
+
+    .coeur {
+        color: transparent;
+    }
+
+    .coeur-anim {
+       
+    }
+
+
+    &:hover .coeur-anim {
+        
+        position: absolute;
+        left: 50%;
+        transform: translate(50%);
+        bottom: 3px;
+        font-size: 25px;
+        color: #9356DC;
+        font-weight: bold;
+        transition-duration: 0.3s;
+        font-size: 25px;
+    }
+}
+
   
   
  
