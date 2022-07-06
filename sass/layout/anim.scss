@@ -20,34 +20,97 @@
 
 
   .box-restaurant__coeur {
-    position: absolute;
-    right: 20px;
-    bottom: 30px;
-    font-size: 25px;
+            position: absolute;
+            right: 50px;
+            bottom: 30px;
+            font-size: 25px;
 
-    .coeur {
-        color: transparent;
-    }
+           
 
-    .coeur-anim {
-       
-    }
+            .coeur-anim-vide{  
+              position: absolute;
+              left: 10px; ;  
+              bottom: 20px;
+             
+           
+               
+            }
 
+            &:hover .coeur-anim-vide {
+              color: transparent;
+              transform: color;
+              transition-delay: 0.2s;
+            }
 
-    &:hover .coeur-anim {
+            .coeur-anim{ 
+              position: absolute;
+              left: 10px; ;  
+              bottom: 0px;
+              color: transparent;
+              font-size: 0px;
+                
+            }
+
+    
+            &:hover .coeur-anim {
+                
+                position: absolute;
+                bottom: 22px;
+                left: 16px;
+                font-size: 25px;
+                transform: translate(-25%,10%);
+
+                transition-property: color;
+                transition-duration: 0.3s;
+                color: $couleur-secondaire;
+                
+                transition-property: font-size;
+                font-weight: bold;
+                transition-duration: 0,3s;
+                font-size: 25px;
+                
+                
+            }
+        }
+
+  
+  
+        .container__icon{
+         
+         
+          & > i{
+            font-size:1.9rem;
+          }
+          & .two{
+           position:absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            overflow:hidden;
+          }
+        }
+          .container__icon:hover > .one{
+            font-weight: bold;
+            background:linear-gradient(90deg, #FF79DA, #9356DC);
+            background-size: 100% 200px;
+            background-repeat: no-repeat;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: glissement 2s ease-in-out both;
+         }
         
-        position: absolute;
-        left: 50%;
-        transform: translate(50%);
-        bottom: 3px;
-        font-size: 25px;
-        color: #9356DC;
-        font-weight: bold;
-        transition-duration: 0.3s;
-        font-size: 25px;
-    }
-}
-
-  
-  
- 
+        @keyframes glissement{
+          0% {
+            background-position:50% -40%;
+          }
+          /*40% {
+            background-position:50% -20%;
+          }*/
+         /* 80% {
+            background-position:50% -10%;
+          }*/
+          100% {
+            background-position:50% 0%;
+            
+          }
+        }
