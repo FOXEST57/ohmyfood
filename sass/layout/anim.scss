@@ -44,7 +44,7 @@
 
             .coeur-anim{ 
               position: absolute;
-              left: 10px; ;  
+              left: 10px;  
               bottom: 0px;
               color: transparent;
               font-size: 0px;
@@ -75,42 +75,3 @@
 
   
   
-        .container__icon{
-         
-         
-          & > i{
-            font-size:1.9rem;
-          }
-          & .two{
-           position:absolute;
-            top:50%;
-            left:50%;
-            transform: translate(-50%,-50%);
-            overflow:hidden;
-          }
-        }
-          .container__icon:hover > .one{
-            font-weight: bold;
-            background:linear-gradient(90deg, #FF79DA, #9356DC);
-            background-size: 100% 200px;
-            background-repeat: no-repeat;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-            animation: glissement 2s ease-in-out both;
-         }
-        
-        @keyframes glissement{
-          0% {
-            background-position:50% -40%;
-          }
-          /*40% {
-            background-position:50% -20%;
-          }*/
-         /* 80% {
-            background-position:50% -10%;
-          }*/
-          100% {
-            background-position:50% 0%;
-            
-          }
-        }
