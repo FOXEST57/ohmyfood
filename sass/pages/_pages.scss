@@ -71,28 +71,32 @@
         padding-bottom: 10px;
         margin-top: 20px;
         margin-bottom: 20px
+
+
+        
         }
 
 
 .box-restaurant {
-            @include restaurant-nouveau;       
+            @include restaurant-nouveau;  
+
+            &__titre{    
+                display: flex;
+                justify-content: space-between;
+                align-items: center;  
+                margin: 10px 15px 0px 15px;       
+            }
+
+            &__soustitre {
+                margin-left: 14px;
+                }    
+            
         }
 
 
-.box-restaurant__titre{    
-        display: flex;
-        justify-content: space-between;
-        align-items: center;  
-        margin: 10px 15px 0px 15px;    
-        
-       
-    }
-    
-    
-.box-restaurant__soustitre {
-        margin-left: 14px;
 
-        }
+    
+
 
        
         
