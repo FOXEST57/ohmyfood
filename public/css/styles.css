@@ -158,52 +158,52 @@
   }
 }
 .menu__anim-1 {
-  animation: anim-carte 0.5s 0.2s linear both;
+  animation: anim-carte 0.2s 0.2s linear both;
   animation-duration: 0.5s;
 }
 
 .menu__anim-2 {
-  animation: anim-carte 1s 0.4s linear both;
+  animation: anim-carte 0.2s 0.6s linear both;
   animation-duration: 1s;
 }
 
 .menu__anim-3 {
-  animation: anim-carte 1.5s 0.6s linear both;
+  animation: anim-carte 0.2s 1s linear both;
   animation-duration: 1.5s;
 }
 
 .menu__anim-4 {
-  animation: anim-carte 2s 1s linear both;
+  animation: anim-carte 0.2s 1.4s linear both;
   animation-duration: 2s;
 }
 
 .menu__anim-5 {
-  animation: anim-carte 2.5s 1.2s linear both;
+  animation: anim-carte 0.2s 1.8s linear both;
   animation-duration: 2.5s;
 }
 
 .menu__anim-6 {
-  animation: anim-carte 3s 2s linear both;
+  animation: anim-carte 0.2s 2.4s linear both;
   animation-duration: 3s;
 }
 
 .menu__anim-7 {
-  animation: anim-carte 3.5s 2.2s linear both;
+  animation: anim-carte 0.2s 2.8s linear both;
   animation-duration: 3.5s;
 }
 
 .menu__anim-8 {
-  animation: anim-carte 4s 2.4s linear both;
+  animation: anim-carte 0.2s 3.2s linear both;
   animation-duration: 4s;
 }
 
 .menu__anim-9 {
-  animation: anim-carte 4.5s 2.6s linear both;
+  animation: anim-carte 0.2s 3.6s linear both;
   animation-duration: 4.5s;
 }
 
 .menu__anim-10 {
-  animation: anim-carte 5s 2.8s linear both;
+  animation: anim-carte 0.2s 4s linear both;
   animation-duration: 5s;
 }
 
