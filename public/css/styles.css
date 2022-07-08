@@ -311,7 +311,7 @@ p {
 
 .decouverte__bouton button {
   background-image: linear-gradient(to top, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
-  border: 1px solid transparent;
+  border: 0px solid transparent;
   border-radius: 30px;
   padding: 10px 20px 10px 20px;
   color: #fff;
