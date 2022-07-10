@@ -198,33 +198,14 @@
           animation-duration: 5s;
         }
 
-       
+ 
       .menu__conteneur {
         
-        width: 100%;
-        display: flex;
-
-        
-        
-        &__gauche { 
-          width: 70%;
-        }
-
         &__droit {
-          font-weight: bold;
-          font-size: 15px;
-          border-radius: 0 17px 17px 0;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          width: 20%;
-          text-align: right;
           position: absolute;
-          right: -50px;
+          right: -90px;
           transition: right 3s, transform 1s;
           }
-
-          
 
           &:hover {
             cursor: pointer;
@@ -234,7 +215,7 @@
                   }
             .menu__conteneur__droit {
               cursor: pointer;
-              transform: translateX(-65%);
+              transform: translateX(-64%);
             }     
           }
       }
@@ -246,11 +227,15 @@
       align-items: center;
       border-radius: 0 15px 15px 0;
       background-color: $couleur-tertiaire;
-      height: 80px;
-      width: 80px;
+      height: 85px;
+      width: 85px;
         }
     .fa-check-circle {
+      
         color: white;
         transition-duration: 1s;    
         
     }
+
+
+

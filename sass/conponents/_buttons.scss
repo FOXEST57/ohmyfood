@@ -20,7 +20,10 @@
                   }
                 
       }    
-  
+.decouverte__bouton {
+  display: flex;
+  justify-content: center
+} 
 
 .decouverte__bouton button{
     @include bouton-index;
