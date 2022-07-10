@@ -34,10 +34,31 @@
                 }
     }
 
+.section {
+
+    @media (min-width: $tablette) {
+        display: flex;
+        justify-content: space-around;
+        
+    }
+}
+
+
 .section__titre  { 
     margin-left: 20px;
     padding-top: 20px;
-    padding-bottom: 15px;    
+    padding-bottom: 15px;
+
+    @media (min-width: $tablette) {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+        
+        
+    }
+    
+    
     }
 
 
@@ -50,9 +71,25 @@
         background-color: $back-main;
         padding: 2rem 1rem;
 
+        @media (min-width: $tablette) {
+            margin-top: 5%;
+            display: flex;
+            flex-direction: row;
+            align-content: stretch;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
 
         .restaurant-titre {
            @include titre-h2-index;
+           @media (min-width: $tablette) {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        
+           }
         }
 
         .restaurant__image {
@@ -65,15 +102,17 @@
 
 
 .restaurant-section { 
+        
         position: relative;
         box-shadow: 4px 4px 6px #aaa;
         border-radius: 20px;
         padding-bottom: 10px;
         margin-top: 20px;
-        margin-bottom: 20px
-
-
-        
+        @media (min-width: $tablette) {
+            width: 45%;
+            margin-top: 3%;
+            
+        }        
         }
 
 
@@ -93,6 +132,7 @@
             
         }
 
+  
 
 
     

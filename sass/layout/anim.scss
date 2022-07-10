@@ -72,170 +72,116 @@
 
 /* animation coeur  des cartes entête des pages restaurant */
 
-        .block__conteneur__coeur {
-          position: absolute;
-          right: 50px;
-          top: 15px;
-          font-size: 25px;
-          background: none;
-          border: none;
+.block__conteneur__coeur {
+  position: absolute;
+  right: 50px;
+  top: 15px;
+  font-size: 25px;
+  background: none;
+  border: none;
 
-          .block__conteneur__coeur-vide{  
-            position: absolute;
-            left: 10px; ;  
-            top: 20px;   
-          }
+    .block__conteneur__coeur-vide{  
+    position: absolute;
+    left: 10px; ;  
+    top: 20px;   
+    }
 
-          &:hover .block__conteneur__coeur-vide {
-            color: transparent;
-            transform: color;
-            transition-delay: 0.2s;
-          }
-
-          .block__conteneur__coeur-anim{ 
-            position: absolute;
-            left: 10px;  
-            top: 10px;
-            color: transparent;
-            font-size: 0px;    
-          }
-              &:hover .block__conteneur__coeur-anim {
-
-                content: "\f004";
-              
-                position: absolute;
-                top: 17px;
-                left: 16px;
-                font-size: 25px;
-                transform: translate(-25%,10%);
-
-                transition-property: color;
-                transition-duration: 0.3s;
-                background: -webkit-gradient(linear, left top, left bottom, from($couleur-primaire), to($couleur-secondaire));
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-
-                transition-property: font-size;
-                font-weight: bold;
-                transition-duration: 0,4s;
-                font-size: 26px;    
-          }
+      &:hover .block__conteneur__coeur-vide {
+      color: transparent;
+      transform: color;
+      transition-delay: 0.2s;
       }
+
+    .block__conteneur__coeur-anim{ 
+    position: absolute;
+    left: 10px;  
+    top: 10px;
+    color: transparent;
+    font-size: 0px;    
+  }
+      &:hover .block__conteneur__coeur-anim {
+
+        content: "\f004";
+      
+        position: absolute;
+        top: 17px;
+        left: 16px;
+        font-size: 25px;
+        transform: translate(-25%,10%);
+
+        transition-property: color;
+        transition-duration: 0.3s;
+        background: -webkit-gradient(linear, left top, left bottom, from($couleur-primaire), to($couleur-secondaire));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        transition-property: font-size;
+        font-weight: bold;
+        transition-duration: 0,4s;
+        font-size: 26px;    
+  }
+}        
   
 /* animation pour l'afichage décalé des cartes menu dans les pages restaurant */
       
-      @keyframes anim-carte {
-        0% {
-          transform: translateY(50px);
-          opacity: 0;
-        }
-        20% {
-          opacity: 0.2;
-        }
-        40% {
-          opacity: 0.4;
-        }
-        60% {
-          opacity: 0.6;
-        }
-        80% {
-          opacity: 0.8;
-        }
-        100% { 
-          transform: translateY(0);
-          opacity: 1;
-        }
-      }
+@keyframes anim-carte {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  100% { 
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 
      
-        .menu__anim-1 {
-          animation: anim-carte 0.2s 0.2s linear both;
-          animation-duration: 0.5s;
-        }
-        
-        .menu__anim-2 {
-          animation: anim-carte 0.2s 0.6s linear both;
-          animation-duration: 1s;
-        }
-        
-        .menu__anim-3 {  
-          animation: anim-carte  0.2s 1s linear both;
-          animation-duration: 1.5s;
-        }
-        
-        .menu__anim-4 {
-          animation: anim-carte 0.2s 1.4s linear both;
-          animation-duration: 2s;
-        }
-        
-        .menu__anim-5 {
-          animation: anim-carte 0.2s 1.8s linear both;
-          animation-duration: 2.5s;
-        }
-        
-        .menu__anim-6 {
-          animation: anim-carte 0.2s 2.4s linear both;
-          animation-duration: 3s;
-        }
-        
-        .menu__anim-7 {
-           animation: anim-carte 0.2s 2.8s linear both;
-           animation-duration: 3.5s
-        }
-        
-        .menu__anim-8 {
-          animation: anim-carte 0.2s 3.2s linear both;
-          animation-duration: 4s;
-        }
-        
-        .menu__anim-9 {
-          animation: anim-carte 0.2s 3.6s linear both;
-          animation-duration: 4.5s;
-        }
-        
-        .menu__anim-10 {
-          animation: anim-carte 0.2s 4s linear both;
-          animation-duration: 5s;
-        }
-
+       
  
-      .menu__conteneur {
+.menu__conteneur {
         
-        &__droit {
-          position: absolute;
-          right: -90px;
-          transition: right 3s, transform 1s;
-          }
-
-          &:hover {
-            cursor: pointer;
-            .fa-check-circle {
-                  cursor: pointer;
-                  transform: rotate(360deg);
-                  }
-            .menu__conteneur__droit {
-              cursor: pointer;
-              transform: translateX(-64%);
-            }     
-          }
-      }
-      
-      
-    .menu__conteneur__icon {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-radius: 0 15px 15px 0;
-      background-color: $couleur-tertiaire;
-      height: 85px;
-      width: 85px;
-        }
-    .fa-check-circle {
-      
-        color: white;
-        transition-duration: 1s;    
-        
+  &__droit {
+    position: absolute;
+    right: -90px;
+    transition: right 3s, transform 1s;
     }
+
+    &:hover {
+      cursor: pointer;
+      .fa-check-circle {
+            cursor: pointer;
+            transform: rotate(360deg);
+            }
+      .menu__conteneur__droit {
+        
+        cursor: pointer;
+        transform: translateX(-64%);
+       
+      }     
+    }    
+}
+
+
+
+
+.fa-check-circle {
+
+  color: white;
+  transition-duration: 1s;    
+  
+}
 
 
 

@@ -1,5 +1,63 @@
+
+.block { 
+    @media (min-width: $desktop) { 
+        padding-left: 1%;
+        padding-right: 0.5%;
+        overflow: hidden;}}
 .menu {
 
+    &__anim-1 {
+        animation: anim-carte 0.2s 0.2s linear both;
+        animation-duration: 0.5s;
+      }
+      
+    &__anim-2 {
+        animation: anim-carte 0.2s 0.6s linear both;
+        animation-duration: 1s;
+      }
+      
+    &__anim-3 {  
+        animation: anim-carte  0.2s 1s linear both;
+        animation-duration: 1.5s;
+      }
+      
+    &__anim-4 {
+        animation: anim-carte 0.2s 1.4s linear both;
+        animation-duration: 2s;
+      }
+      
+    &__anim-5 {
+        animation: anim-carte 0.2s 1.8s linear both;
+        animation-duration: 2.5s;
+      }
+      
+    &__anim-6 {
+        animation: anim-carte 0.2s 2.4s linear both;
+        animation-duration: 3s;
+      }
+      
+    &__anim-7 {
+         animation: anim-carte 0.2s 2.8s linear both;
+         animation-duration: 3.5s
+      }
+      
+    &__anim-8 {
+        animation: anim-carte 0.2s 3.2s linear both;
+        animation-duration: 4s;
+      }
+      
+    &__anim-9 {
+        animation: anim-carte 0.2s 3.6s linear both;
+        animation-duration: 4.5s;
+      }
+      
+    &__anim-10 {
+        animation: anim-carte 0.2s 4s linear both;
+        animation-duration: 5s;
+      }
+
+
+    
     &__ligne{
         width: 40px;
         border: 1px solid $couleur-tertiaire;
@@ -22,6 +80,12 @@
         margin-bottom: 30px;
         box-shadow: 4px 4px 6px #aaa;
         display: flex;
+        
+
+        @media (min-width: $desktop) {
+            width: 99%;
+            
+        }
 
 
         &__gauche {
@@ -36,14 +100,15 @@
             justify-content: space-between;
             align-items: center;
             text-align: right;
+            overflow: hidden;
         }
 
         &__titre{
-           
+            
             margin-left: 10px;
             margin-top: 15px;
             margin-bottom: 10px;
-            
+           
             font-size: 18px;
             overflow: hidden;
             text-overflow: ellipsis;
@@ -56,7 +121,7 @@
             margin-left: 10px;
             margin-right: 20px;
             font-size: 14px;
-        
+           
             text-overflow: ellipsis;
             white-space: nowrap;
             overflow: hidden;
@@ -68,8 +133,14 @@
             margin-right:20px;
             margin-bottom: 0;
             padding-top: 15px;
-        
+
+            @media (min-width: $desktop) {
+                margin-right: 30px;
+            }
+            
         }
+
+        
       
       
 
@@ -79,3 +150,12 @@
     }
 }
 
+.menu__conteneur__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 15px 15px 0;
+    background-color: $couleur-tertiaire;
+    height: 85px;
+    width: 85px;
+      }

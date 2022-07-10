@@ -11,7 +11,10 @@
         font-family: "shrikhand";
         font-size: 20px;
         margin-left: 20px;
-        padding-bottom: 30px;    
+        padding-bottom: 30px; 
+        @media (min-width:$tablette) {
+            padding-bottom: 15px;
+        }   
     }
 
     &__conteneur {
@@ -36,7 +39,14 @@
     }
     &__cl {
         padding-bottom: 15px;
+
         
     }
 
+    @media (min-width: $tablette)
+{
+    flex-direction: row;
+    align-items: center;
+
+}
 }
