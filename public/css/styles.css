@@ -73,7 +73,6 @@
   font-size: 0px;
 }
 .box-restaurant__coeur:hover .coeur-anim {
-  content: "\f004";
   position: absolute;
   bottom: 22px;
   left: 16px;
@@ -205,6 +204,53 @@
 .menu__anim-10 {
   animation: anim-carte 0.2s 4s linear both;
   animation-duration: 5s;
+}
+
+.menu__conteneur {
+  width: 100%;
+  display: flex;
+}
+.menu__conteneur__gauche {
+  width: 70%;
+}
+.menu__conteneur__droit {
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 0 17px 17px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  text-align: right;
+  position: absolute;
+  right: -50px;
+  transition: right 3s, transform 1s;
+}
+.menu__conteneur:hover {
+  cursor: pointer;
+}
+.menu__conteneur:hover .fa-check-circle {
+  cursor: pointer;
+  transform: rotate(360deg);
+}
+.menu__conteneur:hover .menu__conteneur__droit {
+  cursor: pointer;
+  transform: translateX(-65%);
+}
+
+.menu__conteneur__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 15px 15px 0;
+  background-color: #99e2d0;
+  height: 80px;
+  width: 80px;
+}
+
+.fa-check-circle {
+  color: white;
+  transition-duration: 1s;
 }
 
 html {
@@ -409,32 +455,38 @@ p {
 .menu__conteneur {
   background-color: #fff;
   border-radius: 15px;
-  height: 70px;
+  height: 90px;
   padding: 10px;
+  margin-bottom: 30px;
   box-shadow: 4px 4px 6px #aaa;
-  position: relative;
+  display: flex;
   cursor: pointer;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
   transition: padding-right 450ms ease-in-out;
 }
+.menu__conteneur__gauche {
+  width: 100%;
+}
 .menu__conteneur__titre {
-  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
   font-size: 18px;
 }
-.menu__conteneur__inline {
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  height: 25px;
-}
-.menu__conteneur__inline__soustitre {
+.menu__conteneur__soustitre {
   margin: 0%;
   font-size: 14px;
 }
-.menu__conteneur__inline__prix {
+.menu__conteneur__droit {
   margin-left: auto;
+}
+.menu__conteneur__prix {
+  margin-bottom: 0;
+  padding-top: 28px;
+}
+.menu__conteneur__icon {
+  display: flex;
 }
 
 .lieu {

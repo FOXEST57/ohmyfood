@@ -50,8 +50,6 @@
               font-size: 0px;    
             }
                 &:hover .coeur-anim {
-
-                  content: "\f004";
                 
                   position: absolute;
                   bottom: 22px;
@@ -200,5 +198,59 @@
           animation-duration: 5s;
         }
 
+       
+      .menu__conteneur {
+        
+        width: 100%;
+        display: flex;
 
         
+        
+        &__gauche { 
+          width: 70%;
+        }
+
+        &__droit {
+          font-weight: bold;
+          font-size: 15px;
+          border-radius: 0 17px 17px 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 20%;
+          text-align: right;
+          position: absolute;
+          right: -50px;
+          transition: right 3s, transform 1s;
+          }
+
+          
+
+          &:hover {
+            cursor: pointer;
+            .fa-check-circle {
+                  cursor: pointer;
+                  transform: rotate(360deg);
+                  }
+            .menu__conteneur__droit {
+              cursor: pointer;
+              transform: translateX(-65%);
+            }     
+          }
+      }
+      
+      
+    .menu__conteneur__icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 0 15px 15px 0;
+      background-color: $couleur-tertiaire;
+      height: 80px;
+      width: 80px;
+        }
+    .fa-check-circle {
+        color: white;
+        transition-duration: 1s;    
+        
+    }
