@@ -147,34 +147,39 @@
   }
 }
 
-     
+@keyframes anim-check {
+  0% {
+    width: 0;  
+  }
+  100% {  
+    width: 100%;
+  }
+}
+   
        
- 
+/* 
 .menu__conteneur {
         
-  &__droit {
-    position: absolute;
-    right: -90px;
+  &__icon {
+    cursor: pointer;
+   /* position: absolute;
+    right: -90px; 
     transition: right 3s, transform 1s;
-    }
+    } 
 
     &:hover {
       cursor: pointer;
+      animation: anim-check 1s ;
+
       .fa-check-circle {
             cursor: pointer;
             transform: rotate(360deg);
-            }
-      .menu__conteneur__droit {
-        
-        cursor: pointer;
-        transform: translateX(-63%);
-       
-      }     
+            }      
     }    
 }
+}
 
-
-
+*/
 
 .fa-check-circle {
 
@@ -183,5 +188,15 @@
   
 }
 
-
+.menu__conteneur {
+  &:hover {
+      .menu__conteneur__icon {
+          animation: anim-check 1s;
+      }
+      .fa-check-circle {
+        transform: rotate(360deg);
+        
+      }
+  }
+}
 

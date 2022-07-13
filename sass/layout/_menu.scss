@@ -80,6 +80,11 @@
         margin-bottom: 30px;
         box-shadow: 4px 4px 6px #aaa;
         display: flex;
+
+        &:hover {
+          .menu__conteneur__droit { width: 40%;}
+          .menu__conteneur__gauche {width: 60%;}
+        }
         
 
         @media (min-width: $desktop) {
@@ -89,10 +94,13 @@
 
 
         &__gauche {
-            width: 100%;
+            width: 80%;
+            
+     
           }
        
         &__droit {
+            width: 20%;
             font-weight: bold;
             font-size: 15px;
             border-radius: 0 17px 17px 0;
@@ -110,7 +118,7 @@
             margin-bottom: 10px;
            
             font-size: 18px;
-            overflow: hidden;
+            overflow: hidden; 
             text-overflow: ellipsis;
             white-space: nowrap;     
             
@@ -138,14 +146,7 @@
                 margin-right: 30px;
             }
             
-        }
-
-        
-      
-      
-
-            
-        
+        }        
     
     }
 }
@@ -157,5 +158,5 @@
     border-radius: 0 15px 15px 0;
     background-color: $couleur-tertiaire;
     height: 85px;
-    width: 85px;
+    width: 0;
       }
