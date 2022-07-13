@@ -1,4 +1,4 @@
-# ohmyfood
+# Ohmyfood
 ## Projet 3 openclassroom : Dynamiser un site web avec des animations CSS
 
 ### Objectifs
