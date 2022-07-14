@@ -61,8 +61,6 @@
   bottom: 20px;
 }
 .box-restaurant__coeur:hover .coeur-anim-vide {
-  color: transparent;
-  transform: color;
   transition-delay: 0.2s;
 }
 .box-restaurant__coeur .coeur-anim {
