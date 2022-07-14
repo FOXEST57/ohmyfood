@@ -156,36 +156,11 @@
   }
 }
    
-       
-/* 
-.menu__conteneur {
-        
-  &__icon {
-    cursor: pointer;
-   /* position: absolute;
-    right: -90px; 
-    transition: right 3s, transform 1s;
-    } 
-
-    &:hover {
-      cursor: pointer;
-      animation: anim-check 1s ;
-
-      .fa-check-circle {
-            cursor: pointer;
-            transform: rotate(360deg);
-            }      
-    }    
-}
-}
-
-*/
 
 .fa-check-circle {
 
   color: white;
-  transition-duration: 1s;    
-  
+  transition-duration: 1s;      
 }
 
 .menu__conteneur {
