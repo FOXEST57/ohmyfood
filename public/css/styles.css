@@ -83,7 +83,7 @@
   -webkit-text-fill-color: transparent;
   transition-property: font-size;
   font-weight: bold;
-  transition-duration: 0, 4s;
+  transition-duration: 0.4s;
   font-size: 25px;
 }
 
@@ -102,8 +102,6 @@
   top: 20px;
 }
 .block__conteneur__coeur:hover .block__conteneur__coeur-vide {
-  color: transparent;
-  transform: color;
   transition-delay: 0.2s;
 }
 .block__conteneur__coeur .block__conteneur__coeur-anim {
@@ -127,7 +125,7 @@
   -webkit-text-fill-color: transparent;
   transition-property: font-size;
   font-weight: bold;
-  transition-duration: 0, 4s;
+  transition-duration: 0.4s;
   font-size: 26px;
 }
 
