@@ -155,21 +155,3 @@
 }
    
 
-.fa-check-circle {
-
-  color: white;
-  transition-duration: 1s;      
-}
-
-.menu__conteneur {
-  &:hover {
-      .menu__conteneur__icon {
-          animation: anim-check 1s;
-      }
-      .fa-check-circle {
-        transform: rotate(360deg);
-        
-      }
-  }
-}
-

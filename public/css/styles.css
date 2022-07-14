@@ -160,18 +160,6 @@
     width: 100%;
   }
 }
-.fa-check-circle {
-  color: white;
-  transition-duration: 1s;
-}
-
-.menu__conteneur:hover .menu__conteneur__icon {
-  animation: anim-check 1s;
-}
-.menu__conteneur:hover .fa-check-circle {
-  transform: rotate(360deg);
-}
-
 html {
   margin: 0;
 }
@@ -199,14 +187,6 @@ a {
   width: 100%;
   object-fit: cover;
   height: 30vh;
-}
-
-p {
-  display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
 }
 
 html {
